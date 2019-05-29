@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 1</title>
+        <style>
+        	* {
+  box-sizing: border-box;
+}
+
+input[type=email], input[type=url], input[type=date], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=reset], input[type=submit] {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+nput[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.row-01 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.row-02 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*for smaller screens such as on smartphones*/
+@media screen and (max-width: 800px) {
+  .row-01, .row-02, input[type=reset], input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+            
+        </style>
+    </head>
+   
+
+    <body>
+
+	<div class="container">
+    	<form>
+
+  <div class="row">
+      <div class="row-01">
+        <label for="Email">Email Address</label>
+      </div>
+      <div class="row-02">
+        <input type="email" id="Email" name="emailAddress" placeholder="Input email here..." required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-01">
+        <label for="pURL">Personal URL</label>
+      </div>
+
+      <div class="row-02">
+        <input type="url" id="pURL" name="personalURL" placeholder="Input personal URL here..." required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-01">
+        <label for="YOB">Year of Birth</label>
+      </div>
+      <div class="row-02">
+        <input type="date" id="YOB" name="yearOfBirth" required>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="row-01">
+    	<label for="gender">Gender</label>
+    </div>
+    <div class="row-02">
+    	<input type="radio" name="gender" value="male" checked> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="other"> Other
+  	</div>
+  </div>
+
+    <div class="row">
+      <div class="row-01">
+        <label for="comments">Comments</label>
+      </div>
+      <div class="row-02">
+        <textarea id="comments" name="comments" placeholder="Input text here..." style="height:200px"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+    	<input type="checkbox" name="confirm" value="confirmed" required>I confirm that the data entered is fictitious
+    </div>
+
+    <div class="row">
+      <input type="reset" value="Clear All">
+      <input type="submit" value="Submit">
+    </div>
+</form>
+</div>
+        
+        <h1>Places to Visit in Canada</h1>
+        
+        <p>Story:<br>
+        	The focus of the website will be to recommend interested people places they should visit if they were to travel to Canada. The target audience can be people looking to visit Canada from a foreign country or even Canadians that want to explore different parts of the country.<br>
+        	In order to achieve this goal, the website will focus on informing the audience about several locations in each province and territory (with a focus on the provinces). Each area will have pictures showcasing the location to the viewer with some description or interesting fact accompanying each location.
+
+
+
+        </p>
+
+        
+       
+
+    </body>
+</html>
+
