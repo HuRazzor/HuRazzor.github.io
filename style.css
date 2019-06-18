@@ -12,6 +12,14 @@ header {
     text-align: center;
 }
 
+#story {
+  opacity: .4;
+}
+
+#story:hover {
+  cursor: not-allowed;
+}
+
 input[type=email], input[type=url], input[type=date], textarea {
   width: 100%;
   padding: 12px;
