@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: #2d6360 50% 0 url('Banner_image.jpg') no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    text-align: center;
+}
+
 input[type=email], input[type=url], input[type=date], textarea {
   width: 100%;
   padding: 12px;
@@ -29,7 +39,7 @@ input[type=reset]:hover {
   background-color: #45a049;
 }
 
-nput[type=submit]:hover {
+input[type=submit]:hover {
   background-color: #45a049;
 }
 
@@ -66,12 +76,4 @@ nput[type=submit]:hover {
   
  
 
-header {
-    height: 230px;
-    padding: 20px 0 70px 0;
-    background: #2d6360 50% 0 url('Banner_image.jpg') no-repeat;
-    background-attachment: fixed, fixed, fixed, scroll;
-    background-position: 0 0, 0 0, -5px -25px, 0 50%;
-    background-repeat: repeat, repeat, repeat, no-repeat;
-    text-align: center;
-}
+
