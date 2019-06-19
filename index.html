@@ -8,6 +8,15 @@
 	 <script src="modernizr.js"</script>
 	 
 	 <script>
+	 
+	 if(Modernizr.meter){
+ 	 	alert('Your browser supports HTML5 progress bar')
+ 	 }else{
+ 	 	alert('Your browser does not support HTML5 progress bar')
+ 	 }
+	 
+	 
+	 
 	 function get_location() {
      if (Modernizr.geolocation) {
        navigator.geolocation.getCurrentPosition(show_map, handle_error, {maximumAge: 75000, enableHighAccuracy: true});
