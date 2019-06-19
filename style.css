@@ -80,7 +80,11 @@ input[type=submit]:hover {
   .row-01, .row-02, input[type=reset], input[type=submit] {
     width: 100%;
     margin-top: 0;
-  }
+  }}
+
+@media (orientation: landscape){#hiddenLandscape {
+display: none;
+}}
   
  
 
