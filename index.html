@@ -6,52 +6,10 @@
          <link rel="stylesheet" type="text/css" href="HuRazzor.github.io/style.css">
 	 <script src="prefixfree.min.js"></script>
 	 <script src="modernizr.js"></script>
+	    <script src="geolocationJS.js"></script>
+	    <script src="hammerjs.js"></script>
+	    <script src="batteryVibration.js"></script>
 	 
-	 <script>
-	 
-	 if(Modernizr.meter){
- 	 	alert('Your browser supports HTML5 progress bar')
- 	 }else{
- 	 	alert('Your browser does not support HTML5 progress bar')
- 	 }
-	 
-	 
-	 
-	 function get_location() {
-     if (Modernizr.geolocation) {
-       navigator.geolocation.getCurrentPosition(show_map, handle_error, {maximumAge: 75000, enableHighAccuracy: true});
-       console.log('We have location support!');
-     } else {
-       console.error('No HTML5 Geolocation support!');
-     }
-   }
-   
-   //Handle errors
-   function handle_error(err) {
-     if (err.code == 1) {
-       console.error('HTML5 Geolocation Error: Permission denied (code 1)');
-     }
-     if (err.code == 0) {
-       console.error('HTML5 Geolocation Error: Unknown error (code 0)');
-     }
-     if (err.code == 2) {
-       console.error('HTML5 Geolocation Error: Position unavailable. Network is down or positioning satellites can\'t be contacted! (code 2)');
-     }
-     if (err.code == 3) {
-       console.error('HTML5 Geolocation Error: Timed out (code 3)');
-     }
-    
-   }
-   
-   function show_map(position) {
-     console.log('Sending to Google Maps');
-     var latitude = position.coords.latitude;
-     var longitude = position.coords.longitude; 
-     window.location = 'http://maps.google.com/maps?saddr='+latitude+', '+longitude+'&daddr='
-   }
-	
-  
-	    </script>
 	
     </head>
    
@@ -140,9 +98,17 @@
         </p>
 
         <a href="#" onClick="get_location();">Show me my general location!</a> 
-        
-       <p id="hiddenLandscape"> <br> This text should be hidden when device orientation is in landscape mode</p>
+        <p id = "locationInfo"></p>
+	<a id = "parliament" href="#"></a><br><br>
+	<button id ="vibrateButton" onclick="vibrate1(500)">Single Vibrate</button><br>
 
-    </body>
+<p id="hiddenLandscape"> <br> This text should be hidden when device orientation is in landscape mode</p>
+
+<div id="myElement"></div>
+
+<div> <p> Next Paragraph</p></div>
+   
+	
+	</body>
 </html>
 
