@@ -20,6 +20,25 @@ header {
   cursor: not-allowed;
 }
 
+#myElement {
+  background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;
+}
+
+#vibrateButton {
+  
+  display: inline-block;
+  background-color: #0f0fdb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
 input[type=email], input[type=url], input[type=date], textarea {
   width: 100%;
   padding: 12px;
