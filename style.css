@@ -1,15 +1,16 @@
- * {
+* {
   box-sizing: border-box;
 }
 
 header {
     height: 230px;
     padding: 20px 0 70px 0;
-    background: #2d6360 50% 0 url("images/BannerImage.JPG") no-repeat;
+    background: #2d6360 50% 0 url('BannerImage.jpg') no-repeat;
     background-attachment: fixed, fixed, fixed, scroll;
     background-position: 0 0, 0 0, -5px -25px, 0 50%;
     background-repeat: repeat, repeat, repeat, no-repeat;
     text-align: center;
+    
 }
 
 #story {
@@ -20,12 +21,7 @@ header {
   cursor: not-allowed;
 }
 
-#myElement {
-  background: silver;
-  height: 300px;
-  text-align: center;
-  font: 30px/300px Helvetica, Arial, sans-serif;
-}
+
 
 #vibrateButton {
   
@@ -38,6 +34,112 @@ header {
   cursor: pointer;
 
 }
+
+.province_banner {
+  text-align: center;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  font-family: : "Gill Sans", cursive;
+  font-size: 40px;
+  font-weight: 200;
+  font-style: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 
 input[type=email], input[type=url], input[type=date], textarea {
   width: 100%;
@@ -102,9 +204,11 @@ input[type=submit]:hover {
   }}
 
 @media (orientation: landscape){#hiddenLandscape {
+
 display: none;
 }}
-  
- 
+
+
+
 
 
