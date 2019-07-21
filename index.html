@@ -9,6 +9,37 @@
 	    <script src="geolocationJS.js"></script>
 	    <script src="hammerjs.js"></script>
 	    <script src="batteryVibration.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script>
+     	// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+     </script>
 	 
 	
     </head>
@@ -98,17 +129,26 @@
         </p>
 
         <a href="#" onClick="get_location();">Show me my general location!</a> 
-        <p id = "locationInfo"></p>
-	<a id = "parliament" href="#"></a><br><br>
-	<button id ="vibrateButton" onclick="vibrate1(500)">Single Vibrate</button><br>
+<p id = "locationInfo"></p>
+<a id = "parliament" href="#"></a><br><br>
+<button id ="vibrateButton" onclick="vibrate1(500)">Single Vibrate</button><br>
 
 <p id="hiddenLandscape"> <br> This text should be hidden when device orientation is in landscape mode</p>
 
-<div id="myElement"></div>
 
-<div> <p> Next Paragraph</p></div>
-   
-	
-	</body>
+
+<div> <h2 class="province_banner">Ontario</h2></div>
+
+
+<img class="myImages" id="myImg" src="ontario_1.jpg" alt="Niagara Falls">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  
+       
+
+    </body>
 </html>
-
