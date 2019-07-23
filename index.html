@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Assignment 2</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Website</title>
          <link rel="stylesheet" type="text/css" href="HuRazzor.github.io/style.css">
 	 <script src="prefixfree.min.js"></script>
 	 <script src="modernizr.js"></script>
@@ -10,37 +11,7 @@
 	    <script src="hammerjs.js"></script>
 	    <script src="batteryVibration.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	    <script>
-     	// create references to the modal...
-var modal = document.getElementById('myModal');
-// to all images -- note I'm using a class!
-var images = document.getElementsByClassName('myImages');
-// the image in the modal
-var modalImg = document.getElementById("img01");
-// and the caption in the modal
-var captionText = document.getElementById("caption");
-
-// Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    console.log(evt);
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-     </script>
-	 
+	   
 	
     </head>
    
@@ -118,20 +89,13 @@ span.onclick = function() {
         	The focus of the website will be to recommend interested people places they should visit if they were to travel to Canada. The target audience can be people looking to visit Canada from a foreign country or even Canadians that want to explore different parts of the country.<br>
         	In order to achieve this goal, the website will focus on informing the audience about several locations in each province and territory (with a focus on the provinces). Each area will have pictures showcasing the location to the viewer with some description or interesting fact accompanying each location.<br>
 		<br>
-		Asignment 2 additions:<br>
-		2-1: added opacity and cursor to this paragraph <br>
-		2-2: added compatibility check for progress meter (should show alert) and geolocation detects (see below for link for geolocation detection)
-		
-		
-
-
 
         </p>
 
-        <a href="#" onClick="get_location();">Show me my general location!</a> 
+       
 <p id = "locationInfo"></p>
 <a id = "parliament" href="#"></a><br><br>
-<button id ="vibrateButton" onclick="vibrate1(500)">Single Vibrate</button><br>
+
 
 
 
@@ -140,13 +104,395 @@ span.onclick = function() {
 <div> <h2 class="province_banner">Ontario</h2></div>
 
 
-<img class="myImages" id="myImg" src="images/ontario_1.jpg" alt="Niagara Falls">
+<img class="myImages" id="myImg" src="ontario_1.jpg" alt="Niagara Falls">
+
 
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
+
+    <div> <p class="province_text">Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, between the Canadian province of Ontario and the US state of New York. From largest to smallest, they are Horseshoe Falls, American Falls and Bridal Veil Falls.<br><br>
+    Horseshoe Falls, also known as Canadian Falls, is the largest of the three waterfalls that collectively form Niagara Falls on the Niagara River along the Canada–United States border. Popular activities include boat tours to the waterfall.</p></div>
+    <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Marriott Niagara Falls Hotel Fallsview & Spa<br><br>
+    	<a href="https://www.niagarafallsmarriott.com/" target="_blank" onclick="vibrate1(500)">Website: Marriott Niagara Falls Hotel Fallsview & Spa</a><br>
+    	Address: 6740 Fallsview Blvd, Niagara Falls, ON L2G 3W6<br>
+    	<a href="tel: +1-888-501-8916">Tel: +1 (888) 501-8916</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+    <img class="myImages" id="myImg" src="ontario_2.jpg" alt="Canadian Parliament">
+
+<div> <p class="province_text">The Parliament of Canada is the federal legislature of Canada, seated at Parliament Hill in Ottawa, the national capital. The body consists of the Canadian monarch, represented by a viceroy, the Governor General; an upper house, the Senate; and a lower house, the House of Commons. Tours of the Parliament of Canada are availble to the public.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Albert at Bay Suite Hotel - Downtown Ottawa<br><br>
+    	<a href="https://www.albertatbay.com/?utm_source=google&utm_medium=organic&utm_campaign=GMB" target="_blank" onclick="vibrate1(500)">Website: Albert at Bay Suite Hotel - Downtown Ottawa</a><br>
+    	Address: 435 Albert St, Ottawa, ON K1R 7X4<br>
+    	<a href="tel: +1-613-238-8858">Tel: +1 (613) 238-8858</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+	<div> <h2 class="province_banner">Québec</h2></div>
+
+	<img class="myImages" id="myImg" src="quebec_1.jpg" alt="Old Quebec">
+
+<div> <p class="province_text">Bounded by fortifications dating to the 17th century, Old Quebec is rich in historic landmarks and museums. Upper Town contains the 1800s Citadelle fort, the grand Château Frontenac hotel and Terrasse Dufferin, a wide boardwalk overlooking the city. A funicular connects to Lower Town and the Quartier Petit Champlain, with a 1688 stone church, Place Royale square, and charming boutiques on Rue du Petit Champlain.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Fairmont Le Château Frontenac<br><br>
+    	<a href="https://www.fairmont.com/frontenac-quebec/" target="_blank" onclick="vibrate1(500)">Website: Fairmont Le Château Frontenac</a><br>
+    	Address: 1 rue des Carrières, Québec City, Quebec, G1R 4P5 <br>
+    	<a href="tel: +1-866-540-4460">Tel: +1 (866) 540-4460</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+    <img class="myImages" id="myImg" src="quebec_2.jpg" alt="The Plains of Abraham">
+
+<div> <p class="province_text">The Plains of Abraham is a historic area within The Battlefields Park in Quebec City, Quebec, Canada. The land is the site of the Battle of the Plains of Abraham, which took place on 13 September 1759, but hundreds of acres of the fields became used for grazing, housing, and minor industrial structures.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Fairmont Le Château Frontenac<br><br>
+    	<a href="https://www.fairmont.com/frontenac-quebec/" target="_blank" onclick="vibrate1(500)">Website: Fairmont Le Château Frontenac</a><br>
+    	Address: 1 rue des Carrières, Québec City, Quebec, G1R 4P5 <br>
+    	<a href="tel: +1-866-540-4460">Tel: +1 (866) 540-4460</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<img class="myImages" id="myImg" src="quebec_3.jpg" alt="Notre-Dame Basilica of Montreal">
+
+<div> <p class="province_text">The Notre-Dame basilica of Montreal is the first church of the Gothic Revival style in Canada. Its history, noted by the Sulpician Fathers since its foundation, is intimately tied in to the history of the City of Montreal. It bears witness to its Catholic foundations and the ever-present connections between the arts and religion. Its architectural style marked a turning point in the religious tradition and was imitated by several parishes.<br><br>
+
+A place of prayer and celebration of Catholic worship, Notre-Dame basilica has always been the site for grand events that have highlighted the imagination of the Québécois.<br><br>
+
+Raised to the rank of a minor Basilica in 1982, by Pope John Paul II, it’s religious, historical and artistic importance makes it one of the jewels of Quebec’s heritage.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Hôtel Épik Montréal<br><br>
+    	<a href="http://www.epikmontreal.com/" target="_blank" onclick="vibrate1(500)">Website: Hôtel Épik Montréal</a><br>
+    	Address: 171 Saint-Paul St W, Montreal, QC H2Y 1Z5<br>
+    	<a href="tel: +1-514-842-2634">Tel: +1 (514) 842-2634</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>    
+
+<div> <h2 class="province_banner">Newfoundland and Labrador</h2></div>
+
+<img class="myImages" id="myImg" src="nf_1.jpg" alt="Signal Hill">
+
+<div> <p class="province_text">Signal Hill is a hill which overlooks the city of St. John's, Newfoundland and Labrador, Canada. Due to its strategic placement overlooking the harbour, fortifications were built on the hill beginning in the mid 17th century. <br><br>
+
+Signal Hill was also the site of St. John's harbour defences from the 17th century to the Second World War, and where Guglielmo Marconi received the world's first transatlantic wireless signal in 1901.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Hometel on Signal Hill<br><br>
+    	<a href="https://www.hometel.ca/" target="_blank" onclick="vibrate1(500)">Website: Hometel on Signal Hill</a><br>
+    	Address: 2 St Joseph's Ln, St. John's, NL A1A 5B2<br>
+    	<a href="tel: +1-709-739-7799">Tel: +1 (709) 739-7799</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>    
+
+<img class="myImages" id="myImg" src="nf_2.jpg" alt="Terra Nova National Park">
+
+<div> <p class="province_text">Terra Nova National Park is located on the east coast of Newfoundland in the Canadian province of Newfoundland and Labrador, along several inlets of Bonavista Bay. The park takes its name from the Latin name for Newfoundland; it is also the original Portuguese name given to the region.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Pinetree Lodge & Cabins<br><br>
+    	<a href="http://www.pinetreelodge.ca/" target="_blank" onclick="vibrate1(500)">Website: Pinetree Lodge & Cabins</a><br>
+    	Address: 62-64 Main St, Traytown, NL A0G 4K0<br>
+    	<a href="tel: +1-709-533-6601">Tel: +1 (709) 533-6601</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<div> <h2 class="province_banner">Prince Edward Island</h2></div>
+
+<img class="myImages" id="myImg" src="pei_1.jpg" alt="Green Gables Heritage Place">
+
+<div> <p class="province_text">Green Gables is the name of a 19th-century farm in Cavendish, Prince Edward Island, and is one of the most notable literary landmarks in Canada. The Green Gables farm and its surroundings are the setting for the popular Anne of Green Gables novels by Lucy Maud Montgomery.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Silverwood Motel<br><br>
+    	<a href="http://silverwoodmotel.com/" target="_blank" onclick="vibrate1(500)">Website: Silverwood Motel</a><br>
+    	Address: 8933 Cavendish Rd, Green Gables, PE C0A 1M0<br>
+    	<a href="tel: +1-800-565-4753">Tel: +1 (800) 565-4753</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<img class="myImages" id="myImg" src="pei_2.jpg" alt="Government House">
+
+<div> <p class="province_text">Government House was constructed between 1832 and 1834 as a viceregal residence for the lieutenant governor of the then British colony of Prince Edward Island. The land, a parcel of 100 acres known as Fanning Bank or Fanning's Bank, was in 1789 set aside by Lieutenant Governor Edmund Fanning as Crown land, with the specific stipulation that it be used as the site for the governor's residence. In 1873, approximately 10 acres was retained for Government House and its grounds. 40 acres was given to the City of Charlottetown and later became Victoria Park. It is now a historic site of Canada.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	The Harbour House<br><br>
+    	<a href="https://www.hhhouse.net/" target="_blank" onclick="vibrate1(500)">Website: The Harbour House</a><br>
+    	Address: 9 Grafton St, Charlottetown, PE C1A 1K3<br>
+    	<a href="tel: +1-902-892-6633">Tel: +1 (902) 892-6633</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<div> <h2 class="province_banner">New Brunswick</h2></div>
+
+<img class="myImages" id="myImg" src="nb_1.jpg" alt="Magnetic Hill Zoo">
+
+<div> <p class="province_text">The Magnetic Hill Zoo is a 16-hectare zoo located adjacent to Magnetic Hill and the Magic Mountain in the Magnetic Hill Area of Moncton, New Brunswick. The zoo has over 400 animals, making it the largest zoo in Atlantic Canada. In 2008, the zoo was rated fourth on a list of Canada's top ten zoos.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Days Inn & Suites by Wyndham Moncton<br><br>
+    	<a href="https://www.wyndhamhotels.com/en-ca/days-inn/moncton-new-brunswick/days-inn-and-suites-moncton/overview?CID=LC:DI:20160927:Rio:Local&iata=00093796" target="_blank" onclick="vibrate1(500)">Website: Days Inn & Suites by Wyndham Moncton</a><br>
+    	Address: 2515 Mountain Rd, Moncton, NB E1G 2W4<br>
+    	<a href="tel: +1-506-801-8434">Tel: +1 (506) 801-8434</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<img class="myImages" id="myImg" src="nb_2.jpg" alt="Kings Landing">
+
+<div> <p class="province_text">Kings Landing is a New Brunswick, living history museum with original buildings from the period of 1820-1920. It was created around buildings that were saved and moved to make way for the headpond for the Mactaquac Dam. </p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	STRONG TIMBERS B and B<br><br>
+    	<a href="https://strongtimbers2005.business.site/" target="_blank" onclick="vibrate1(500)">Website: STRONG TIMBERS B and B</a><br>
+    	Address: 820 Hillview St, Upper Kingsclear, NB E3E 1V1<br>
+    	<a href="tel: +1-506-470-5700">Tel: +1 (506) 470-5700</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+    <div> <h2 class="province_banner">Nova Scotia</h2></div>
+
+<img class="myImages" id="myImg" src="ns_1.jpg" alt="Halifax Citadel National Historic Site">
+
+<div> <p class="province_text">Citadel Hill is a hill that is a National Historic Site in Halifax, Nova Scotia, Canada. Four fortifications have been constructed on Citadel Hill since 1749, and were referred to as Fort George—but only the third fort was officially named Fort George.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Homewood Suites by Hilton Halifax<br><br>
+    	<a href="https://homewoodsuites3.hilton.com/en/hotels/nova-scotia/homewood-suites-by-hilton-halifax-downtown-nova-scotia-canada-YHZDWHW/index.html?SEO_id=GMB-HW-YHZDWHW" target="_blank" onclick="vibrate1(500)">Website: Homewood Suites by Hilton Halifax</a><br>
+    	Address: 1960 Brunswick St, Halifax, NS B3J 2G7<br>
+    	<a href="tel: +1-902-429-6620">Tel: +1 (902) 429-6620</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<img class="myImages" id="myImg" src="ns_2.jpg" alt="Maritime Museum of the Atlantic">
+
+<div> <p class="province_text">The Maritime Museum of the Atlantic is a maritime museum located in downtown Halifax, Nova Scotia, Canada.<br><br>
+
+The museum is a member institution of the Nova Scotia Museum and is the oldest and largest maritime museum in Canada with a collection of over 30,000 artifacts including 70 small craft and a steamship: the CSS Acadia, a 180-foot steam-powered hydrographic survey ship launched in 1913.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Hampton Inn by Hilton Halifax Downtown<br><br>
+    	<a href="https://hamptoninn3.hilton.com/en/hotels/nova-scotia/hampton-inn-by-hilton-halifax-downtown-YHZDXHX/index.html?SEO_id=GMB-HP-YHZDXHX" target="_blank" onclick="vibrate1(500)">Website: Hampton Inn by Hilton Halifax Downtown</a><br>
+    	Address: 1960 Brunswick St, Halifax, NS B3J 2G7<br>
+    	<a href="tel: +1-902-422-1391">Tel: +1 (902) 422-1391</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+    <div> <h2 class="province_banner">Manitoba</h2></div>
+
+<img class="myImages" id="myImg" src="mn_1.jpg" alt="The Manitoba Museum">
+
+<div> <p class="province_text">The Manitoba Museum, previously the Manitoba Museum of Man and Nature is the largest museum in Winnipeg, Manitoba, Canada. It is located close to City Hall. The museum was designed by Herbert Henry Gatenby Moody of Moody and Moore in 1965.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Fairmont Winnipeg<br><br>
+    	<a href="https://www.fairmont.com/winnipeg/" target="_blank" onclick="vibrate1(500)">Website: Fairmont Winnipeg</a><br>
+    	Address: 2 Lombard Pl, Winnipeg, MB R3B 0Y3<br>
+    	<a href="tel: +1-204-957-1350">Tel: +1 (204) 957-1350</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<img class="myImages" id="myImg" src="mn_2.jpg" alt="Winnipeg Art Gallery">
+
+<div> <p class="province_text">Since its establishment as one of Canada's earliest civic art museums in 1912, the Winnipeg Art Gallery has grown to house nearly 30,000 works of art. Today, the WAG has the world's largest collection of modern and contemporary Inuit art.</p></div>
+
+<div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Fairmont Winnipeg<br><br>
+    	<a href="https://www.fairmont.com/winnipeg/" target="_blank" onclick="vibrate1(500)">Website: Fairmont Winnipeg</a><br>
+    	Address: 2 Lombard Pl, Winnipeg, MB R3B 0Y3<br>
+    	<a href="tel: +1-204-957-1350">Tel: +1 (204) 957-1350</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div> 
+
+<div> <h2 class="province_banner">Saskatchewan</h2></div>
+
+<img class="myImages" id="myImg" src="sk_1.jpg" alt="Royal Saskatchewan Museum">
+
+<div> <p class="province_text">The Royal Saskatchewan Museum was established in Regina as the Provincial Museum in 1906 to "secure and preserve natural history specimens and objects of historical and ethnological interest." It was the first museum in Saskatchewan, Canada, and the first provincial museum in the three Prairie Provinces. </p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	The Hotel Saskatchewan, Autograph Collection<br><br>
+    	<a href="https://www.marriott.com/hotels/travel/yqrak-the-hotel-saskatchewan-autograph-collection/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank" onclick="vibrate1(500)">Website: The Hotel Saskatchewan, Autograph Collection</a><br>
+    	Address: 2125 Victoria Ave, Regina, SK S4P 0S3<br>
+    	<a href="tel: +1-306-522-7691">Tel: +1 (306) 522-7691</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<img class="myImages" id="myImg" src="sk_2.jpg" alt="Wascana Centre">
+
+<div> <p class="province_text">Wascana Centre is a 930 hectare urban park built around Wascana Lake in Regina, Saskatchewan, Canada, established in 1912 with a design from renowned architect Thomas Mawson. The park is designed around the Saskatchewan Legislative Building and Wascana Lake.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	The Hotel Saskatchewan, Autograph Collection<br><br>
+    	<a href="https://www.marriott.com/hotels/travel/yqrak-the-hotel-saskatchewan-autograph-collection/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank" onclick="vibrate1(500)">Website: The Hotel Saskatchewan, Autograph Collection</a><br>
+    	Address: 2125 Victoria Ave, Regina, SK S4P 0S3<br>
+    	<a href="tel: +1-306-522-7691">Tel: +1 (306) 522-7691</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<div> <h2 class="province_banner">Alberta</h2></div>
+
+<img class="myImages" id="myImg" src="ab_1.jpg" alt="Banff National Park Of Canada">
+
+<div> <p class="province_text">Banff National Park is Canada's oldest national park and was established in 1885. Located in the Rocky Mountains, 110–180 kilometres west of Calgary in the province of Alberta, Banff encompasses 6,641 square kilometres of mountainous terrain, with many glaciers and ice fields, dense coniferous forest, and alpine landscapes. The Icefields Parkway extends from Lake Louise, connecting to Jasper National Park in the north. Provincial forests and Yoho National Park are neighbours to the west, while Kootenay National Park is located to the south and Kananaskis Country to the southeast. The main commercial centre of the park is the town of Banff, in the Bow River valley.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	HI Banff Alpine Centre<br><br>
+    	<a href="https://hihostels.ca/en/destinations/alberta/hi-banff" target="_blank" onclick="vibrate1(500)">Website: HI Banff Alpine Centre</a><br>
+    	Address: 801 Hidden Ridge Way, Banff, AB T1L 1B3<br>
+    	<a href="tel: +1-403-762-4123">Tel: +1 (403) 762-4123</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<img class="myImages" id="myImg" src="ab_2.jpg" alt="West Edmonton Mall">
+
+<div> <p class="province_text">West Edmonton Mall, located in Edmonton, Alberta, Canada, is the largest shopping mall in North America, followed by King of Prussia Mall, and the 23rd largest in the world by gross leasable area. It was the world's largest mall until 2004.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Holiday Inn Express & Suites West Edmonton<br><br>
+    	<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/edmonton/yegah/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-CA-_-YEGAH" target="_blank" onclick="vibrate1(500)">Website: Holiday Inn Express & Suites West Edmonton</a><br>
+    	Address: 18520 100 Ave NW Bldg 2, Edmonton, AB T5S 0K6<br>
+    	<a href="tel: +1-780-756-2134">Tel: +1 (780) 756-2134</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<div> <h2 class="province_banner">British Columbia</h2></div>
+
+<img class="myImages" id="myImg" src="bc_1.jpg" alt="The Butchart Gardens">
+
+<div> <p class="province_text">The Butchart Gardens is a group of floral display gardens in Brentwood Bay, British Columbia, Canada, located near Victoria on Vancouver Island. The gardens receive over a million visitors each year. The gardens have been designated a National Historic Site of Canada.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Guest Suites on Benvenuto<br><br>
+    	<a href="http://guestsuitesonbenvenuto.com/" target="_blank" onclick="vibrate1(500)">Website: Guest Suites on Benvenuto</a><br>
+    	Address: 1130 Benvenuto Ave, Brentwood Bay, BC V8M 1J6<br>
+    	<a href="tel: +1-855-352-2071">Tel: +1 (855) 352-2071</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<img class="myImages" id="myImg" src="bc_2.jpg" alt="Whistler Blackcomb">
+
+<div> <p class="province_text">Whistler Blackcomb is a ski resort located in Whistler, British Columbia, Canada. By many measures it is the largest ski resort in North America and has the greatest uphill lift capacity. It features the Peak 2 Peak Gondola for moving between Whistler and Blackcomb mountains at the top.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Fairmont Château Whistler<br><br>
+    	<a href="https://www.fairmont.com/whistler/" target="_blank" onclick="vibrate1(500)">Website: Fairmont Château Whistler</a><br>
+    	Address: 4599 Chateau Blvd, Whistler, BC V8E 0Z5<br>
+    	<a href="tel: +1-604-938-8000">Tel: +1 (604) 938-8000</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<div> <h2 class="province_banner">Yukon Territory</h2></div>
+
+<img class="myImages" id="myImg" src="yk_1.jpg" alt="Takhini Hot Springs">
+
+<div> <p class="province_text">Takhini Hot Springs is a natural hot springs located just outside the border of Whitehorse, Yukon. It is a locally run business which incorporates two pools at different temperatures and has a campground with over 80 sites. It is a historic site and a very popular destination for tourists and locals.</p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Hidden Valley Bed & Breakfast<br><br>
+    	<a href="https://www.yukonbedandbreakfast.com/" target="_blank" onclick="vibrate1(500)">Website: Hidden Valley Bed & Breakfast</a><br>
+    	Address: 40 Couch Rd, Whitehorse, YT Y1A 4A2<br>
+    	<a href="tel: +1-867-633-6482">Tel: +1 (867) 633-6482</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<div> <h2 class="province_banner">Northwest Territories</h2></div>
+
+<img class="myImages" id="myImg" src="nwt_1.jpg" alt="Alexandra Falls">
+
+<div> <p class="province_text">The Alexandra Falls is a 32 m waterfall located on the Hay River in the Northwest Territories. The falls, the third highest in the NWT, form part of the Twin Falls Gorge Territorial Park and has its own day use area with a 3 km trail to the main campsite at Louise Falls, the second of the Twin Falls. </p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Ptarmigan Inn Hotels<br><br>
+    	<a href="http://www.ptarmiganinn.com/" target="_blank" onclick="vibrate1(500)">Website: Ptarmigan Inn Hotels</a><br>
+    	Address: Gagnier Rd, Hay River, NT X0E 1G12<br>
+    	<a href="tel: +1-867-874-6781">Tel: +1 (867) 874-6781</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+<div> <h2 class="province_banner">Nunavut</h2></div>
+
+<img class="myImages" id="myImg" src="nn_1.jpg" alt="Auyuittuq National Park">
+
+<div> <p class="province_text">Auyuittuq National Park is a national park located on Baffin Island's Cumberland Peninsula, in the Qikiqtaaluk Region of Nunavut, the largest political subdivision of Canada.<br><br>
+Suggested activities include hiking via hiking trails and through arctic terrains, glaciers, fjords, and ice fields.
+
+ </p></div>
+
+ <div><p class="accomodations_footer">
+    	<b>Suggested Accomodation</b><br><br>
+    	Pangnirtung Fjordview Bed and Breakfast<br><br>
+    	<a href="http://beconnectedservices.ca/" target="_blank" onclick="vibrate1(500)">Website: Pangnirtung Fjordview Bed and Breakfast</a><br>
+    	Address: Next to Parks, Pangnirtung, NU X0A 0R0<br>
+    	<a href="tel: +1-867-473-8039">Tel: +1 (867) 473-8039</a><br>
+    	<a href="#" onClick="get_location();">Bring up Google Maps/Native Mobile Map Application</a>
+    </p></div>
+
+
+
+
+     <script>
+        
+     	// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+     	for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+  
+       
+
   
        
 
