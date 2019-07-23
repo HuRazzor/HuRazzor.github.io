@@ -12,6 +12,7 @@ header {
     text-align: center;
 }
 
+
 #story {
   opacity: .4;
 }
@@ -148,6 +149,7 @@ header {
   .province_text {
     font-weight: 500;
   font-size: 1.5em;
+  }
 }
 
 
@@ -213,9 +215,4 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }}
-
-@media (orientation: landscape){#hiddenLandscape {
-
-display: none;
-}}
 
