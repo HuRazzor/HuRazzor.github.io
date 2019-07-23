@@ -21,32 +21,38 @@ header {
 }
 
 
-
-#vibrateButton {
-  
-  display: inline-block;
-  background-color: #0f0fdb;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-
 .province_banner {
   text-align: center;
   border-top: 3px solid grey;
   border-bottom: 3px solid grey;
   font-family: : "Gill Sans", cursive;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 200;
   font-style: normal;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-#myImg {
+.accomodations_footer {
+  text-align: center;
+  background-color: #bbb9bd;
+  color: #656466;
+  font-weight: 600;
+
+}
+
+.province_text {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+
+}
+
+.myImages {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -56,7 +62,7 @@ header {
   margin-left: auto;
 }
 
-#myImg:hover {
+.myImages:hover {
   opacity: 0.7;
 }
 
@@ -107,6 +113,7 @@ header {
   animation-duration: 0.6s;
 }
 
+
 @keyframes zoom {
   from {
     transform: scale(0)
@@ -133,11 +140,13 @@ header {
   cursor: pointer;
 }
 
+
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
+
 
 
 input[type=email], input[type=url], input[type=date], textarea {
